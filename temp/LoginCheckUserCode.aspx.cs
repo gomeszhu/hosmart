@@ -38,6 +38,12 @@ public partial class LoginCheckUserCode : System.Web.UI.Page
                 Response.Write(Ret);
                 Response.End();
             }
+	    else
+	    {
+		Ret = "<Data><Ret>N</Ret><Msg>未输入用户工号信息！</Msg><UserCode></UserCode></Data>";
+                Response.Write(Ret);
+                Response.End();
+	    }
         }
     }
 
